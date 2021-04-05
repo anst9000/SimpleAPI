@@ -1,0 +1,88 @@
+body {
+  font-family: Calibri, Verdana, Arial, sans-serif;
+  background-color: White;
+  color: Black;
+}
+
+h2 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+.summary {
+  font-family: monospace;
+  display: -webkit-flex; /* Safari */
+  -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row {
+  border: 2px solid #ffffff;
+  width: 100%;
+  cursor: pointer;
+  background-color: #d7e9fa;
+}
+
+.list-row {
+  border: 2px solid #ffffff;
+  width: 100%;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.inner-row {
+  border: 2px solid #ffffff;
+  padding-left: 1%;
+  margin-left: 1%;
+  background-color: #ffffff;
+}
+
+.block {
+  background-color: #ccc;
+  width: 150px;
+}
+
+.presentation-text,
+.pass-percentage,
+.test-run-time,
+.total-tests {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.leaf-division {
+  border: 2px solid #ffffff;
+  background-color: #e6eff7;
+}
+
+.pass,
+.passed {
+  color: rgb(4, 158, 4);
+}
+
+.fail,
+.failed {
+  color: #c00;
+}
+
+.error-message {
+  color: brown;
+}
+
+.error-stack-trace {
+  color: brown;
+}
+
+.duration {
+  float: right;
+  padding-right: 1%;
+}
+
+.error-info {
+  margin-left: 16px;
+}
