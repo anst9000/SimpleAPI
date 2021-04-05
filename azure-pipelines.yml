@@ -23,13 +23,13 @@ steps:
     displayName: "dotnet build $(buildConfiguration)"
 
   - task: DotNetCoreCLI@2
-    displayName: "dotnet publish --configuration $(buildConfiguration) --ouput $(Build.ArtifactStagingDirectory)"
     inputs:
+      displayName: "dotnet publish --configuration $(buildConfiguration) --ouput $(Build.ArtifactStagingDirectory)"
       command: publish
-      publishWebProjects: false
+      publishWebProjects: False
       projects: "src/SimpleAPI/SimpleAPI.csproj"
-      arguments: "--configuration $(buildConfiguration) --ouput $(Build.ArtifactStagingDirectory)"
-      zipAfterPublish: true
+      arguments: "--configuration $(BuildConfiguration) --output $(Build.ArtifactStagingDirectory)"
+      zipAfterPublish: True
 
+  # this code takes all the files in $(Build.ArtifactStagingDirectory) and uploads them as an artifact of your build.
   - task: PublishBuildArtifacts@1
-    displayName: "publish artifacts"
